@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden {
+    display: none;
+}
+
+#container {
+    margin: 20px auto;
+    width: 428px;
+    border: solid 1px #333;
+    background: #efefef;
+    border-radius: 10px;
+}
+
+#mainContent {
+        display: grid;
+        grid-template-columns: repeat(4, 85px);
+        grid-column-gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+
+article {
+    grid-column: 1/-1;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+img {
+    display: block; /* makes the image a block-level element */
+    max-width: 100%; /* ensures the image doesn't exceed its container's width */
+    height: auto; /* preserves the image's aspect ratio */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* adds a subtle shadow effect */
+}
+
+
+
+@font-face {
+    font-family: 'raleway';
+    font-weight: 600;
+    src: url(../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf) format('woff'),
+    url() format('svg'),
+    url(../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'raleway';
+    font-weight: 400;
+    src: url(../fonts/Raleway/static/Raleway-SemiBold.ttf) format('woff'),
+    url(../fonts/merienda-regular-webfont.svg) format('svg'),
+    url(../fonts/Raleway/static/Raleway-SemiBold.ttf) format('truetype');
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+font-family: raleway ;
+color: aqua;
+text-transform: initial;
+font-weight: 1000;
+}
+
+p{
+    font-family: raleway , cursive;
+    color: darkblue;
+}
